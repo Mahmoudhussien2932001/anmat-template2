@@ -1,0 +1,177 @@
+:root {
+  --petrol: #075B7A;
+  --petrol-dark: #063F55;
+  --deep: #052F40;
+  --gold: #9B874D;
+  --gold-dark: #88733E;
+  --white: #FFFFFF;
+  --light: #F5F7F8;
+  --border: #E5EAED;
+  --body: #52616B;
+  --text: #1A2B33;
+  --max: 1320px;
+  --header-h: 74px;
+  --radius: 4px;
+  --shadow: 0 2px 10px rgba(5, 47, 64, 0.05);
+  --t: 0.22s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-h);
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--body);
+  background: var(--white);
+  direction: rtl;
+  text-align: right;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(100% - 40px, var(--max));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 42px 0;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.section-title.light {
+  color: var(--white);
+}
+
+.section-desc {
+  font-size: 13px;
+  color: var(--body);
+  max-width: 320px;
+  line-height: 1.7;
+}
+
+.section-desc.light {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.section-desc.muted {
+  opacity: 0.85;
+}
+
+.section-label {
+  font-size: 11px;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  height: 44px;
+  padding: 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: background var(--t), border-color var(--t), color var(--t);
+  white-space: nowrap;
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--white);
+  border: 1px solid var(--gold);
+}
+
+.btn-gold:hover {
+  background: var(--gold-dark);
+  border-color: var(--gold-dark);
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-outline-light:hover {
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.text-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold);
+  transition: gap var(--t);
+  flex-shrink: 0;
+}
+
+.text-cta:hover {
+  gap: 9px;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-up.is-visible {
+  opacity: 1;
+  transform: none;
+}
