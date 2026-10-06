@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("/fonts/din-next-lt-arabic-light%20%281%29.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN Next LT Arabic";
+  src: url("/fonts/DINNextLTArabic-Regular-3%20%284%29.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --petrol: #065670;
+  --petrol-deep: #032a36;
+  --petrol-ink: #021820;
+  --ink: #021820;
+  --bg: #f6f3ec;
+  --bg-elevated: #fffcf8;
+  --bg-card: #ffffff;
+  --gold: #7a744f;
+  --gold-soft: #cbb98a;
+  --gold-glow: rgba(122, 116, 79, 0.28);
+  --paper: #f7f4ee;
+  --muted: #4a5960;
+  --line: rgba(122, 116, 79, 0.32);
+  --danger: #c46b63;
+  --success: #6f9f7a;
+  --font: "DIN Next LT Arabic", "Segoe UI", Tahoma, sans-serif;
+  --wrap: 1180px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --header: 72px;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --pill: 999px;
+  --text-body: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
+  --text-lead: clamp(1.05rem, 0.95rem + 0.4vw, 1.25rem);
+  --text-h1: clamp(2.8rem, 1.3rem + 4vw, 5.5rem);
+  --text-h2: clamp(2rem, 1.2rem + 2.2vw, 3.6rem);
+  --text-h3: clamp(1.15rem, 1rem + 0.5vw, 1.45rem);
+  --z-header: 40;
+  --z-dialog: 80;
+  --z-wipe: 70;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
